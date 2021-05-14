@@ -56,11 +56,13 @@
   border: 1px solid var(--primary);
 }
 
+/* hide chrome calendar */
 input::-webkit-calendar-picker-indicator {
-  display: none;
-}
-input[type='date']::-webkit-input-placeholder {
-  visibility: hidden !important;
+  position: absolute;
+  top: 30%;
+  left: -12px;
+  opacity: 0;
+  padding: 10px;
 }
 
 .ui-form--icon {
