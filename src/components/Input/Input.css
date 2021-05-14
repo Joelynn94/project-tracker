@@ -34,7 +34,7 @@
 
 .ui-form--input:focus {
   color: var(--focused-text);
-  border: 2px solid dodgerblue;
+  border: 1px solid var(--primary);
 }
 
 .ui-form--icon {
