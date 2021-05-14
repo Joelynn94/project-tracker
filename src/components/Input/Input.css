@@ -32,6 +32,11 @@
   transition: all 0.2s linear;
 }
 
+.ui-form--input:focus {
+  color: var(--focused-text);
+  border: 1px solid var(--primary);
+}
+
 .ui-form--input-lp {
   display: block;
   width: 100%;
@@ -51,7 +56,7 @@
   transition: all 0.2s linear;
 }
 
-.ui-form--input:focus {
+.ui-form--input-lp:focus {
   color: var(--focused-text);
   border: 1px solid var(--primary);
 }
