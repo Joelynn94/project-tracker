@@ -2,4 +2,7 @@
   padding: 0.5rem 0.5rem;
   line-height: 1.5rem;
   text-align: left;
+  background-color: var(--primary);
+  color: var(--primary-text);
+  border: 1px solid #dee2e6;
 }

@@ -1,3 +1,4 @@
 .ui-table--cell {
   padding: 0.5rem 0.5rem;
+  border: 1px solid #dee2e6;
 }
