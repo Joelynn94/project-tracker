@@ -56,6 +56,13 @@
   border: 1px solid var(--primary);
 }
 
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input[type='date']::-webkit-input-placeholder {
+  visibility: hidden !important;
+}
+
 .ui-form--icon {
   color: var(--primary);
   text-align: center;

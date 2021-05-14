@@ -20,6 +20,7 @@ function App() {
       <Button buttonStyle='btn--dark'>Testing</Button>
       <Input helperText='testing 123' icon='search' />
       <Input helperText='testing 123' />
+      <Input helperText='testing 123' type='date' icon='calendar' />
 
       <Table>
         <TableHead>
