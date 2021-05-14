@@ -90,12 +90,6 @@ input::-webkit-calendar-picker-indicator {
   padding-top: 1rem;
 }
 
-.focused-label {
-  top: -10px;
-  background-color: red;
-  padding-top: 0;
-}
-
 .ui-form--helper-text {
   position: absolute;
   bottom: -20px;
