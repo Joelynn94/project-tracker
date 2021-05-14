@@ -14,7 +14,7 @@
   --alt-text: #5964e0;
 }
 
-.btn {
+.ui-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +26,12 @@
   transition: transform 0.3s ease;
 }
 
-.btn:hover {
+.ui-button:hover {
   opacity: 0.8;
   background-color: var(--primary-hover);
 }
 
-.btn:disabled {
+.ui-button:disabled {
   pointer-events: none;
   opacity: 0.65;
 }
