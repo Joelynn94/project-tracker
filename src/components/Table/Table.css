@@ -1,0 +1,8 @@
+.ui-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  color: #212529;
+  border: 1px solid transparent;
+  width: 100%;
+}
