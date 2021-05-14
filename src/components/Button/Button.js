@@ -10,17 +10,6 @@ const STYLES = [
   'btn--success',
   'btn--dark',
 ];
-const ICONS = [
-  'arrow-down',
-  'arrow-right',
-  'arrow-left',
-  'calendar',
-  'check',
-  'delete',
-  'moon',
-  'plus',
-  'sun',
-];
 
 const Button = ({
   children,

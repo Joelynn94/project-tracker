@@ -1,5 +1,6 @@
 import Button from './components/Button/Button';
 import Container from './components/Container/Container';
+import Input from './components/Input/Input';
 import './index.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Button buttonStyle='btn--danger'>Testing</Button>
       <Button buttonStyle='btn--success'>Testing</Button>
       <Button buttonStyle='btn--dark'>Testing</Button>
+      <Input helperText='testing 123' icon='search' />
     </Container>
   );
 }
