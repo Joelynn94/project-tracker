@@ -13,6 +13,7 @@ function App() {
       <Button buttonStyle='btn--success'>Testing</Button>
       <Button buttonStyle='btn--dark'>Testing</Button>
       <Input helperText='testing 123' icon='search' />
+      <Input helperText='testing 123' />
     </Container>
   );
 }

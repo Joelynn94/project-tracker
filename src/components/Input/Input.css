@@ -5,7 +5,7 @@
 
 .ui-form--group {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   height: 56px;
   border-radius: 4px 4px 0 0;
   display: inline-flex;
@@ -17,6 +17,25 @@
   display: block;
   width: 100%;
   padding: 10px 50px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--input-text);
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.ui-form--input-lp {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
