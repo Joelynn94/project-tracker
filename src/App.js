@@ -1,3 +1,4 @@
+import Checkbox from './Checkbox/Checkbox';
 import Button from './components/Button/Button';
 import Container from './components/Container/Container';
 import Input from './components/Input/Input';
@@ -25,24 +26,37 @@ function App() {
       <Table>
         <TableHead>
           <TableRow>
-            <TableHeading>Name</TableHeading>
-            <TableHeading>Date</TableHeading>
-            <TableHeading>Name</TableHeading>
-            <TableHeading>Date</TableHeading>
+            <TableHeading>Project Name</TableHeading>
+            <TableHeading>Project Type</TableHeading>
+            <TableHeading>Priority</TableHeading>
+            <TableHeading>Due Date</TableHeading>
+            <TableHeading>Updated Date</TableHeading>
+            <TableHeading>Created Date</TableHeading>
+            <TableHeading>Complete</TableHeading>
           </TableRow>
         </TableHead>
         <TableBody>
           <TableRow>
-            <TableCell>Project Name</TableCell>
-            <TableCell>Project Date</TableCell>
-            <TableCell>Project Name</TableCell>
-            <TableCell>Project Date</TableCell>
+            <TableCell>REST Countries API</TableCell>
+            <TableCell>Web Application (Front End)</TableCell>
+            <TableCell>Medium</TableCell>
+            <TableCell>5/20/21</TableCell>
+            <TableCell>5/15/21</TableCell>
+            <TableCell>5/14/21</TableCell>
+            <TableCell style={{ textAlign: 'center' }}>
+              <Checkbox />
+            </TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Project Name</TableCell>
-            <TableCell>Project Date</TableCell>
-            <TableCell>Project Name</TableCell>
-            <TableCell>Project Date</TableCell>
+            <TableCell>REST Countries API</TableCell>
+            <TableCell>Web Application (Front End)</TableCell>
+            <TableCell>High</TableCell>
+            <TableCell>5/20/21</TableCell>
+            <TableCell>5/15/21</TableCell>
+            <TableCell>5/14/21</TableCell>
+            <TableCell style={{ textAlign: 'center' }}>
+              <Checkbox />
+            </TableCell>
           </TableRow>
         </TableBody>
       </Table>
