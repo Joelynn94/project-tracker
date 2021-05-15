@@ -1,4 +1,4 @@
-import Checkbox from './Checkbox/Checkbox';
+import Checkbox from './components/Checkbox/Checkbox';
 import Button from './components/Button/Button';
 import Container from './components/Container/Container';
 import Input from './components/Input/Input';
@@ -8,7 +8,27 @@ import TableCell from './components/TableCell/TableCell';
 import TableHead from './components/TableHead/TableHead';
 import TableHeading from './components/TableHeading/TableHeading';
 import TableRow from './components/TableRow/TableRow';
+import Dropdown from './components/Dropdown/Dropdown';
 import './index.css';
+
+const items = [
+  {
+    id: 1,
+    value: 'Web Application (Front End)',
+  },
+  {
+    id: 2,
+    value: 'Web Application (Back End)',
+  },
+  {
+    id: 3,
+    value: 'Web Application (Full Stack)',
+  },
+  {
+    id: 4,
+    value: 'Mobile Application',
+  },
+];
 
 function App() {
   return (
@@ -60,6 +80,8 @@ function App() {
           </TableRow>
         </TableBody>
       </Table>
+
+      <Dropdown title='Select project type' items={items} />
     </Container>
   );
 }
