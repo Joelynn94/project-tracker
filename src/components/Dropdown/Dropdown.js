@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './Dropdown.css';
 
-const Dropwdown = ({ children, title, items = [] }) => {
+const Dropdown = ({ title, items = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggle() {
@@ -13,7 +13,7 @@ const Dropwdown = ({ children, title, items = [] }) => {
 
   return (
     <div className='ui-dropdown--container'>
-      <div
+      <button
         className='ui-dropdown--header'
         tabIndex={0}
         role='button'
@@ -26,7 +26,7 @@ const Dropwdown = ({ children, title, items = [] }) => {
         <div className='ui-dropdown--action'>
           <p>{isOpen ? 'Close' : 'Open'}</p>
         </div>
-      </div>
+      </button>
       {isOpen && (
         <ul className='ui-dropdown--list'>
           {items.map((item) => (
@@ -46,4 +46,4 @@ const Dropwdown = ({ children, title, items = [] }) => {
   );
 };
 
-export default Dropwdown;
+export default Dropdown;
