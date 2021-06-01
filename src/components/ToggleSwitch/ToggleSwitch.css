@@ -1,0 +1,61 @@
+/* toggle div */
+.ui-toggle {
+  display: flex;
+  align-items: center;
+}
+
+/* The switch - the box around the slider */
+.ui-toggle__label {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Hide default checkbox */
+.ui-toggle__label .ui-toggle__checkbox {
+  display: none;
+}
+
+/* The slider itself */
+.ui-toggle__switch {
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--light-background);
+  border-radius: 1rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+/* shows toggle circle color */
+.ui-toggle__switch::before {
+  position: absolute;
+  content: '';
+  left: 5px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Change toggle circle color on hover */
+.ui-toggle__switch:hover::before {
+  background-color: var(--primary-accent);
+}
+
+/* Moves the slider if the input is checked */
+.ui-toggle__label input[type='checkbox']:checked + .ui-toggle__switch::before {
+  transform: translateX(25px);
+}
+
+/* Change background of checkbox when checked */
+.ui-toggle__label input[type='checkbox']:checked + .ui-toggle__switch {
+  background-color: var(--dark-background);
+}

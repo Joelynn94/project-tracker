@@ -16,7 +16,6 @@ const Dropdown = ({ title, items = [] }) => {
       <button
         className='ui-dropdown--header'
         tabIndex={0}
-        role='button'
         onKeyPress={() => toggle(!isOpen)}
         onClick={() => toggle(!isOpen)}
       >

@@ -10,6 +10,7 @@ import TableHeading from './components/TableHeading/TableHeading';
 import TableRow from './components/TableRow/TableRow';
 import Dropdown from './components/Dropdown/Dropdown';
 import './index.css';
+import ToggleSwitch from './components/ToggleSwitch/ToggleSwitch';
 
 const items = [
   {
@@ -82,6 +83,8 @@ function App() {
       </Table>
 
       <Dropdown title='Select project type' items={items} />
+
+      <ToggleSwitch />
     </Container>
   );
 }
