@@ -1,0 +1,22 @@
+# name of the action
+name: Deploy
+
+# Event listener
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # steps to be taken for the job
+    steps:
+      # github actions
+      - uses: actions/checkout@v2
+      # comes from a user that made a Heroku deply action
+      - uses: akhileshns/heroku-deploy@v3.12.11
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "jl-project-tracker"
+          heroku_email: "josephlynn94@gmail.com"
